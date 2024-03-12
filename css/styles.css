@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 94px 0 94px 0;
+}
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+  border-bottom: #cbb26a solid 3px;
+}
+/* Navbar */
+.navbar {
+  background-color: #212121;
+  color: #cbb26a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+.logo {
+  width: 135px;
+}
+/* Hero Section */
+.hero {
+  background-image: url("/images/trucks-highway-mountain-sunset.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(47, 48, 58, 0.4);
+  height: 600px;
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  color: #212121;
+  padding: 50px 0;
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  align-items: center;
+}
+/* About Section */
+.about {
+  background-color: #212121;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Offer Section */
+.section-container {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-content {
+  flex: 1;
+  padding: 0 50px;
+}
+
+.text-content h2 {
+  color: #212121;
+  font-size: 24px;
+}
+
+.image {
+  flex: 1;
+  width: 750px;
+  height: 750px;
+  /* Dostosuj szerokość zdjęcia według potrzeb */
+}
+
+/* Dla lepszego wyglądu na mniejszych ekranach */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    padding: 20px;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+}
+
+/* Employees Section */
+.employees {
+  background-color: #fff;
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  text-align: center;
+}
+.employee {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 428px;
+}
+.our-team {
+  background-color: #cbb26a;
+  margin: 0px;
+  align-items: center;
+}
+.employee-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+/* Contact Section */
+.contact {
+  background-color: #fff;
+  color: #212121;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
