@@ -1,0 +1,22 @@
+.mobile-nav {
+  color: var(--main-black);
+  text-decoration: none;
+  &__link {
+    color: var(--main-black);
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--main-blue);
+    }
+    &--active {
+      color: var(--main-blue);
+      text-decoration: none;
+    }
+  }
+}

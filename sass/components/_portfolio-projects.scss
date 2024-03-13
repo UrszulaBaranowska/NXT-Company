@@ -1,0 +1,100 @@
+.portfolio-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  &__item:hover {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-blue);
+    opacity: 0.9;
+    transform: translatey(100%);
+    transition: $primary-transitions;
+    font-size: $fontSizeBigger;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--main-white);
+    padding: 49px 45px 49px 24px;
+  }
+  &__item:hover &__overlay {
+    transform: translateX(0);
+  }
+  &__item {
+    transition: $primary-transitions;
+  }
+
+  &__info {
+    padding: 20px 24px 20px 24px;
+    border: solid 1px;
+    border-color: var(--lines-color-2);
+    border-top: 0;
+  }
+  &__card {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__title {
+    color: var(--second-black);
+    font-size: $fontSizeBigger;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  &__service {
+    color: var(--main-grey);
+    font-size: $fontSizeBig;
+    font-weight: 400;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+  }
+}
+@include tablet {
+  .portfolio-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    &__item {
+      display: flexbox;
+    }
+  }
+}
+
+@include desktop {
+  .portfolio-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15px;
+    gap: 30px;
+    &__item {
+      margin: 0;
+    }
+    &__overlay {
+      padding: 77px 24px 77px 24px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.portfolio-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px;
+  margin-bottom: 30px;
+
+  &__buttons {
+    height: 38px;
+    width: 103px;
+    align-items: center;
+    font-family: inherit;
+    color: var(--second-black);
+    font-size: $fontSizeBig;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--second-white);
+    border-radius: 4px;
+    border-style: none;
+    transition: $primary-transitions;
+  }
+  &__buttons:hover,
+  &__buttons:focus {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    box-shadow: $portfolio-selected-buttons-shadow;
+  }
+}
+@include tablet {
+  .portfolio-filter {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@include desktop {
+  .portfolio-filter {
+    margin-bottom: 50px;
+    margin-top: 94px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}

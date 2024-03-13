@@ -1,0 +1,101 @@
+.header__nav {
+  display: none;
+}
+@include tablet {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    &--active {
+      color: var(--main-blue);
+      text-decoration: none;
+      font-size: $fontSizeNormal;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 2%;
+      vertical-align: top;
+      text-align: left;
+      position: relative;
+      transition: $primary-transitions;
+    }
+    &--active::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--main-blue);
+      border-radius: 2px;
+      bottom: -32px;
+      position: absolute;
+    }
+    &--links {
+      color: var(--main-black);
+      text-decoration: none;
+      $fontSizeNormal: 14px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 2%;
+      vertical-align: top;
+      text-align: left;
+      position: relative;
+      transition: $primary-transitions;
+    }
+    &--links:hover,
+    &--links:focus {
+      color: var(--main-blue);
+    }
+  }
+}
+@include desktop {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 46px;
+    max-width: 245px;
+    margin-left: 47px;
+    margin-right: 345px;
+    &--active {
+      color: var(--main-blue);
+      text-decoration: none;
+      font-size: $fontSizeNormal;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 2%;
+      vertical-align: top;
+      text-align: left;
+      position: relative;
+      transition: $primary-transitions;
+    }
+    &--active:hover,
+    &--active:focus {
+      color: var(--main-blue);
+    }
+    &--active::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--main-blue);
+      border-radius: 2px;
+      bottom: -32px;
+      position: absolute;
+    }
+    &--links {
+      color: var(--main-black);
+      text-decoration: none;
+      $fontSizeNormal: 14px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 2%;
+      vertical-align: top;
+      text-align: left;
+      position: relative;
+      transition: $primary-transitions;
+    }
+    &--links:hover,
+    &--links:focus {
+      color: var(--main-blue);
+    }
+  }
+}
