@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <title>Nova Xpress Transporte</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Nova Express Transporte</title>
   </head>
-  <body>
-    <!-- Navbar -->
+  <body class="container">
+    <!-- Header / Navigation -->
     <header>
-      <div class="navbar">
-        <div>
-          <span
-            ><img src="./images/2.png"/ alt="logo of company - truck with name
-            of company" class="logo"></span
-          >
-          <ul>
-            <li>Start</li>
-            <li>O nas</li>
-            <li>Oferta</li>
-            <li>Kontakt</li>
-          </ul>
+      <nav>
+        <div class="logo">
+          <img src="/images/NXT_Color_logo_no_background.svg alt="Logo firmy" />
         </div>
+        <ul class="menu">
+          <li><a href="#home">Start</a></li>
+          <li><a href="#about">O Nas</a></li>
+          <li><a href="#services">Oferta</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
         <div class="contact-info">
-          <span>Telefon: 123-456-789</span>
-          <span>Email: info@example.com</span>
+          <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a>
+          <a href="tel:+48123456789">+48 123 456 789</a>
         </div>
-      </div>
+      </nav>
     </header>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Optymalizacja Logistyki: Nasza Misja, Twoje Sukcesy</h1>
-      <h4>Elastyczne Usługi Spedycyjne dla Twojego Biznesu</h4>
-      <button>ZADZWOŃ</button>
+
+    <!-- HERO Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Optymalizacja Logistyki: Nasza Misja, Twoje Sukcesy</h1>
+        <p>Elastyczne Usługi Spedycyjne dla Twojego Biznesu</p>
+        <a href="tel:+48123456789" class="cta-button">ZADZWOŃ</a>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- About Us Section -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <div class="about-image">
+          <img
+            src="/images/supply-chain-representation-still-life (2).jpg"
+            alt="Zdjęcie firmy"
+          />
+        </div>
+        <div class="about-text">
+          <p>
+            Witaj w świecie efektywnej logistyki! Jesteśmy Twoim zaufanym
+            partnerem w podróży przez złożone labirynty dostaw...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Strengths Section -->
+    <section id="strengths" class="features">
       <h2>Nasze mocne strony</h2>
       <div class="features-list">
         <div class="feature">
-          <img src="icon1.png" alt="Ikona 1" />
+          <svg class="strenghts__list--icon" width="70" height="70">
+            <use href="./images/icons.svg#icon-astronaut-1"></use>
+          </svg>
           <p>Innowacyjność</p>
           <p>
             Młody zespół może przynieść świeże pomysły i podejścia do
-            rozwiązywania problemów w branży spedycji. Ich elastyczność i
-            otwartość na nowe technologie mogą prowadzić do wprowadzania
-            innowacyjnych rozwiązań, które poprawiają efektywność i jakość
-            usług.
+            rozwiązywania problemów w branży spedycji...
           </p>
         </div>
         <div class="feature">
@@ -66,9 +72,7 @@
           <p>Energia i zaangażowanie</p>
           <p>
             Młodzi spedytorzy często charakteryzują się dużą energią i
-            entuzjazmem do pracy. Ich zaangażowanie może przyczynić się do
-            podtrzymywania wysokiego poziomu motywacji w zespole oraz do
-            podejmowania dodatkowych wysiłków w celu osiągnięcia celów firmy.
+            entuzjazmem do pracy...
           </p>
         </div>
         <div class="feature">
@@ -76,10 +80,7 @@
           <p>Dynamika i adaptacja</p>
           <p>
             Młodzi spedytorzy mogą szybko przystosowywać się do zmieniających
-            się warunków rynkowych oraz nowych technologii. Ich zdolność do
-            szybkiego uczenia się i adaptacji może być kluczowa w dynamicznym
-            środowisku spedycji, gdzie wymagane są elastyczne podejścia do
-            problemów.
+            się warunków rynkowych...
           </p>
         </div>
         <div class="feature">
@@ -87,136 +88,73 @@
           <p>Znajomość technologii</p>
           <p>
             Młodzi pracownicy często są dobrze zaznajomieni z najnowszymi
-            technologiami, co może przynieść korzyści w zakresie efektywności
-            operacyjnej i usprawnienia procesów spedycyjnych. Mogą być bardziej
-            otwarci na stosowanie nowoczesnych narzędzi i systemów
-            informatycznych w pracy.
+            technologiami...
           </p>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-      <div class="section-container">
-        <div class="text-content">
-          <h2>O nas</h2>
-          <p>
-            Witaj w świecie efektywnej logistyki! Jesteśmy Twoim zaufanym
-            partnerem w podróży przez złożone labirynty dostaw. Wraz z nami,
-            Twoje towary podróżują szybko, sprawnie i bezpiecznie, dotrąc
-            dokładnie tam, gdzie ich potrzeba. Nasza zaawansowana technologia,
-            doświadczenie oraz pasja do doskonałości pozwalają nam zaoferować Ci
-            kompleksowe rozwiązania logistyczne, które spełnią nawet najbardziej
-            wymagające oczekiwania. Niech Twoja firma stanie się pionierem w
-            efektywności logistycznej. Pozwól nam zająć się detalem, a Ty skup
-            się na rozwoju swojego biznesu. Z nami logistyka to nie tylko
-            podróż, to cel, który osiągniesz z łatwością. Dołącz do grona
-            naszych zadowolonych klientów już dziś i przekonaj się, jak
-            logistyka może być prosta, bezproblemowa i skuteczna! Nasza misja:
-            Dostarczanie kompleksowych usług transportowych klientom z
-            profesjonalizmem i efektywnością. Z wieloletnim doświadczeniem w
-            branży zyskaliśmy silną reputację niezawodności i doskonałości. Nasz
-            oddany zespół pracuje niezmordowanie, aby zapewnić, że każda
-            przesyłka jest obsługiwana z należytą uwagą i dostarczana na czas.
-            Jesteśmy zobowiązani do przewyższania oczekiwań naszych klientów i
-            budowania długotrwałych partnerstw opartych na zaufaniu i wysokiej
-            jakości usług.
-          </p>
+    <!-- Our Clients Section -->
+    <section id="clients" class="clients">
+      <h2>Nasi Klienci</h2>
+      <div class="clients-list">
+        <div class="client">
+          <img src="client1.png" alt="Klient 1" />
+          <p>Firma ABC: "Profesjonalizm na najwyższym poziomie..."</p>
         </div>
-        <div class="image">
-          <img
-            src="./images/supply-chain-representation-still-life.jpg"
-            alt="Przykładowe zdjęcie"
-          />
+        <div class="client">
+          <img src="client1.png" alt="Klient 1" />
+          <p>Firma ABC: "Profesjonalizm na najwyższym poziomie..."</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Offer Section -->
-    <section class="offer">
-      <h2>Nasza oferta</h2>
-
-      <div class="section-container">
-        <div class="image">
-          <img
-            src="./images/supply-chain-representation-still-life (2).jpg"
-            alt="Przykładowe zdjęcie"
-          />
+        <div class="client">
+          <img src="client2.png" alt="Klient 2" />
+          <p>Firma XYZ: "Zawsze na czas, zawsze z uśmiechem..."</p>
         </div>
-        <div class="text-content">
-          <h2>Tekst nagłówka</h2>
-          <p>
-            Tu umieść tekst opisujący zawartość sekcji. Możesz dodać dowolną
-            ilość paragrafów, list, itp.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Employees Section -->
-    <section class="employees">
-      <h2>Nasz zespół</h2>
-      <div class="employee-list">
-        <div class="employee our-team">
-          <img
-            src="./images/young-businessman-happy-expression.jpg"
-            alt="Pracownik 1"
-          />
-          <p>Imię i nazwisko</p>
-          <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-          </div>
-        </div>
-        <div class="employee our-team">
-          <img
-            src="./images/businessman-working-office-man-looks-camera-guy-guy-is-standing-by-map.jpg"
-            alt="Pracownik 2"
-          />
-          <p>Imię i nazwisko</p>
-          <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-          </div>
-        </div>
+        <!-- Add more clients as needed -->
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-      <h2>Kontakt</h2>
-      <div class="map">
-        <!-- Google Maps embed code -->
+    <section id="contact" class="contact">
+      <div class="contact-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.012613089096!2d-73.98510278459626!3d40.748817579328306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2594b3ec45e65%3A0x8e1c4b5ac168ba9a!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1597237258636!5m2!1sen!2sus"
+          src="https://maps.app.goo.gl/YcAgwouSHZPVMesKA"
           width="600"
           height="450"
           style="border: 0"
           allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
+          loading="lazy"
         ></iframe>
       </div>
-      <address>
-        Adres firmy<br />
-        Miasto, Kod pocztowy<br />
-        Telefon: 123-456-789<br />
-        Email: info@example.com
-      </address>
+      <div class="contact-info">
+        <p>Adres: Ul. Przykładowa 1, 00-000 Warszawa</p>
+        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a></p>
+        <!-- Add more contact info as needed -->
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <nav>
-        <a href="#">Strona główna</a> | <a href="#">Oferta</a> |
-        <a href="#">O nas</a> |
-        <a href="#">Kontakt</a>
-      </nav>
-      <p>Copyright &copy; 2024 Firma Spedycyjna. Wszelkie prawa zastrzeżone.</p>
-      <a href="#">Polityka prywatności</a>
+      <div class="footer-content">
+        <p>&copy; 2024 Firma Transportowa. Wszelkie prawa zastrzeżone.</p>
+        <div class="social-links">
+          <a href="#facebook">Facebook</a>
+          <a href="#twitter">Twitter</a>
+          <!-- Add more social links as needed -->
+        </div>
+        <a href="#privacy" id="privacy-link">Polityka Prywatności</a>
+      </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Treść polityki prywatności...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
