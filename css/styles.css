@@ -101,13 +101,14 @@ nav .contact-info a:hover,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/2-mirror.png");
+    url("../images/2-mirror.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
