@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Xpress Transporte</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="container">
     <!-- Header / Navigation -->
     <header>
       <nav>
         <div class="logo">
-          <img
-            src="/images/Nova-Xpress-Transporte-logo-gold-no-bacground.png"
-            alt="Logo of comapany Nova Xpress Transporte - 3 letters N X T in gold colour"
-          />
+          <a href="#home"
+            ><img
+              src="/images/Nova-Xpress-Transporte-logo-gold-no-bacground.png"
+              alt="Logo of comapany Nova Xpress Transporte - 3 letters N X T in gold colour"
+          /></a>
         </div>
         <ul class="menu">
           <li><a href="#home">Start</a></li>
           <li><a href="#about">O Nas</a></li>
           <li><a href="#offer">Oferta</a></li>
+          <li><a href="#clients">Referencje</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
         <div class="contact-info">
+          <svg class="contact__icon" width="20" height="16">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
           <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a>
-          <a href="tel:+48123456789">+48 123 456 789</a>
+          <svg class="contact__icon" width="20" height="14">
+            <use href="./images/icons.svg#icon-smartphone"></use></svg
+          ><a href="tel:+48123456789">+48 123 456 789</a>
         </div>
       </nav>
     </header>
@@ -33,9 +46,12 @@
     <section id="hero" class="hero">
       <div class="hero">
         <div class="hero-content">
-          <h1>Optymalizacja Logistyki: <br />Nasza Misja, Twoje Sukcesy</h1>
-          <p>Elastyczne Usługi Spedycyjne dla Twojego Biznesu</p>
-          <a href="#" class="cta-button">NAPISZ DO NAS</a>
+          <h1>LOGISTYKA</h1>
+          <p>NASZA MISJA, TWOJE SUKCESY</p>
+          <div class="hero-buttons">
+            <button href="#" class="cta-button">ZADZWOŃ</button>
+            <button href="#" class="cta-button-2">NAPISZ DO NAS</button>
+          </div>
         </div>
       </div>
     </section>
@@ -45,12 +61,29 @@
       <h2>O FIRMIE</h2>
       <div class="about-content">
         <div class="about-image">
-          <img src="/images/Nova_Xpress_Transporte_4.png" alt="Zdjęcie firmy" />
+          <img src="/images/Nova_Xpress_Transporte_2.png" alt="Zdjęcie firmy" />
         </div>
         <div class="about-text">
           <p>
-            Witaj w świecie efektywnej logistyki! Jesteśmy Twoim zaufanym
-            partnerem w podróży przez złożone labirynty dostaw...
+            <b>Firma NOVA XPRESS TRANSPORTE</b> to nowoczesne przedsiębiorstwo,
+            które powstało z inicjatywy zespołu doświadczonych specjalistów z
+            branży logistycznej. <br />
+            Mimo że jesteśmy nową firmą na rynku, nasi założyciele mogą
+            pochwalić się ponad 10-letnim doświadczeniem w spedycji, co
+            przekłada się na profesjonalizm i jakość świadczonych usług.<br /><br />
+            <b>Specjalizujemy</b> się w transporcie drogowym, z naciskiem na
+            obsługę zleceń na terenie Niemiec. Dzięki doskonałej znajomości
+            rynku niemieckiego oraz sprawdzonym procedurom, zapewniamy naszym
+            klientom szybki i bezpieczny transport towarów, dostosowany do
+            indywidualnych potrzeb. Nasza oferta obejmuje kompleksową obsługę
+            spedycyjną, w tym przewozy ładunków standardowych, ponadgabarytowych
+            oraz tych wymagających specjalnych warunków. <br /><br />
+            <b>Dzięki naszej wiedzy i doświadczeniu</b>, jesteśmy w stanie
+            sprostać nawet najbardziej wymagającym zleceniom. Stawiamy na bliską
+            współpracę z klientami, oferując elastyczne rozwiązania i wsparcie
+            na każdym etapie realizacji zlecenia. Wybierając XYZ Spedycja,
+            zyskujesz partnera, który dba o każdy detal i zawsze stawia na
+            pierwszym miejscu zadowolenie klienta.
           </p>
         </div>
       </div>
@@ -61,40 +94,40 @@
       <h2>Nasze mocne strony</h2>
       <div class="features-list">
         <div class="feature">
-          <svg class="strenghts__list--icon" width="70" height="70">
-            <use href="./images/icon-cycle-truck-order-transport.png"></use>
-          </svg>
-          <p>Innowacyjność</p>
+          <h3>INNOWACYJNOŚĆ</h3>
           <p>
-            Młody zespół może przynieść świeże pomysły i podejścia do
-            rozwiązywania problemów w branży spedycji...
+            W świecie spedycji kluczem do sukcesu jest nieustanne poszukiwanie
+            nowych rozwiązań. Nasza firma stawia na innowacyjność, wprowadzając
+            nowoczesne technologie i strategie logistyczne, które usprawniają
+            procesy transportowe i zapewniają najwyższą jakość usług.
           </p>
         </div>
         <div class="feature">
-          <img src="/images/icon-call-earth.png" alt="Ikona 2" />
-          <p>Energia i zaangażowanie</p>
+          <h3>ZAANGAŻOWANIE</h3>
           <p>
-            Młodzi spedytorzy często charakteryzują się dużą energią i
-            entuzjazmem do pracy...
+            Zespół pełen pasji i zaangażowania to nasza największa siła. Każdego
+            dnia wkładamy maksimum energii, aby sprostać oczekiwaniom naszych
+            klientów. Nasza determinacja przekłada się na sukcesy w realizacji
+            nawet najbardziej wymagających zleceń.
           </p>
         </div>
         <div class="feature">
-          <img src="./images/icon-calnedar-clock.png" alt="Ikona 3" />
-          <p>Dynamika i adaptacja</p>
+          <h3>DYNAMIKA I ADAPTACJA</h3>
           <p>
-            Młodzi spedytorzy mogą szybko przystosowywać się do zmieniających
-            się warunków rynkowych...
+            W dynamicznie zmieniającym się środowisku transportowym elastyczność
+            i szybka reakcja to podstawa. Nasza firma nieustannie dostosowuje
+            się do zmieniających się warunków rynkowych, oferując rozwiązania
+            idealnie dopasowane do potrzeb klientów.
           </p>
         </div>
         <div class="feature">
-          <img
-            src="/images/icon-cycle-truck-order-transport.png"
-            alt="Ikona 4"
-          />
-          <p>Znajomość technologii</p>
+          <h3>ZNAJOMOŚĆ TECHNOLOGII</h3>
           <p>
-            Młodzi pracownicy często są dobrze zaznajomieni z najnowszymi
-            technologiami...
+            W erze cyfryzacji nasza biegłość w nowoczesnych technologiach
+            stanowi fundament efektywnego zarządzania logistyką. Dzięki
+            zaawansowanym narzędziom IT optymalizujemy trasy i monitorujemy
+            przesyłki w czasie rzeczywistym, zapewniając pełną kontrolę i
+            bezpieczeństwo na każdym etapie dostawy.
           </p>
         </div>
       </div>
@@ -117,7 +150,7 @@
             sprawdzonych podwykonawców, jesteśmy w stanie sprostać najbardziej
             wymagającym zleceniom transportowym. Posiadamy dostęp do szerokiej
             gamy pojazdów, które z łatwością dostosowujemy do specyfiki
-            przewożonego towaru. <br />
+            przewożonego towaru. <br /><br />
             <b class="offer-title-p">Nasza flota obejmuje:</b> <br />
             - Pojazdy standardowe z naczepami typu: firana, plandeka, MEGA,<br />
             - Pojazdy specjalistyczne/dedykowane z naczepami: platforma,
@@ -129,7 +162,7 @@
           </p>
         </div>
         <div class="offer-image">
-          <img src="/images/Nova_Xpress_Transporte_2.png" alt="Zdjęcie firmy" />
+          <img src="/images/Nova_Xpress_Transporte_3.png" alt="Zdjęcie firmy" />
         </div>
       </div>
     </section>
@@ -138,18 +171,72 @@
     <section id="clients" class="clients">
       <h2>Nasi Klienci</h2>
       <div class="clients-list">
-        <div class="client">
-          <img src="client1.png" alt="Klient 1" />
-          <p>Firma ABC: "Profesjonalizm na najwyższym poziomie..."</p>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 1"
+          />
+          <p>
+            Firma ABC: "Profesjonalizm na najwyższym poziomie, szybkie decyzje i
+            reakcje na wszelkie problemy. Gorąco polecamy."
+          </p>
         </div>
-        <div class="client">
-          <img src="client1.png" alt="Klient 1" />
-          <p>Firma ABC: "Profesjonalizm na najwyższym poziomie..."</p>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 1"
+          />
+          <p>
+            Firma ABC: "Profesjonalizm na najwyższym poziomie. Pełne informacje
+            na każdym etapie zlecenia oraz szybka i bezpośrednia komunikacja!
+            Pełne zaufanie do tej firmy - wiedzą co robią!"
+          </p>
         </div>
-        <div class="client">
-          <img src="client2.png" alt="Klient 2" />
-          <p>Firma XYZ: "Zawsze na czas, zawsze z uśmiechem..."</p>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 2"
+          />
+          <p>
+            Firma XYZ: "Zawsze na czas, zawsze z uśmiechem. Dobry kontakt i
+            komunikacja na najwyższym poziomie na każdym etapie zlecenia.
+            Polecamy!"
+          </p>
         </div>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 2"
+          />
+          <p>
+            Firma XYZ: "Zawsze na czas, zawsze z uśmiechem. Dobry kontakt i
+            komunikacja na najwyższym poziomie na każdym etapie zlecenia.
+            Polecamy!"
+          </p>
+        </div>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 2"
+          />
+          <p>
+            Firma XYZ: "Zawsze na czas, zawsze z uśmiechem. Dobry kontakt i
+            komunikacja na najwyższym poziomie na każdym etapie zlecenia.
+            Polecamy!"
+          </p>
+        </div>
+        <div class="client feature">
+          <img
+            src="./images/Nova-Xpress-Transporte-logo-gold.png"
+            alt="Klient 2"
+          />
+          <p>
+            Firma XYZ: "Zawsze na czas, zawsze z uśmiechem. Dobry kontakt i
+            komunikacja na najwyższym poziomie na każdym etapie zlecenia.
+            Polecamy!"
+          </p>
+        </div>
+
         <!-- Add more clients as needed -->
       </div>
     </section>
@@ -168,9 +255,46 @@
         ></iframe>
       </div>
       <div class="contact-info">
-        <p>Adres: Ul. Przykładowa 1, 00-000 Warszawa</p>
-        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <h2>NOVA XPRESS TRANSPORTE SP Z O.O.</h2>
+        <p>
+          ADRES: ul. Trasa Północna 14 (budynek ARPOL, 1 piętro), 65-119 Zielona
+          Góra
+        </p>
+        <p>NIP: 9731101306</p>
         <p>Email: <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a></p>
+        <br />
+        <p><b>KONTAKT</b></p>
+        <p>Biuro: <a href="tel. +48 123 456 789"> +48 123 456 789</a></p>
+        <p>Księgowość : <a href="tel. +48 123 456 765"> +48 123 456 789</a></p>
+        <br />
+        <p><b>SPEDYTORZY</b></p>
+        <ol class="speditors">
+          <li>
+            K.Kamiński:<svg class="contact__icon" width="20" height="14">
+              <use href="./images/icons.svg#icon-smartphone"></use></svg
+            ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
+            <svg class="contact__icon" width="20" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
+          </li>
+          <li>
+            Ł. Kukulski:
+            <svg class="contact__icon" width="20" height="14">
+              <use href="./images/icons.svg#icon-smartphone"></use></svg
+            ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
+            <svg class="contact__icon" width="20" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
+          </li>
+          <li>
+            P.Kamiński :<svg class="contact__icon" width="20" height="14">
+              <use href="./images/icons.svg#icon-smartphone"></use></svg
+            ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
+            <svg class="contact__icon" width="20" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
+          </li>
+        </ol>
         <!-- Add more contact info as needed -->
       </div>
     </section>
@@ -181,20 +305,12 @@
         <p>&copy; 2024 Nova Xpress Transporte. Wszelkie prawa zastrzeżone.</p>
         <div class="social-links">
           <a href="#facebook">Facebook</a>
-          <a href="#twitter">LinkedIn</a>
+          <a href="#linkedin">LinkedIn</a>
           <!-- Add more social links as needed -->
         </div>
         <a href="#privacy" id="privacy-link">Polityka Prywatności</a>
       </div>
     </footer>
-
-    <!-- Privacy Policy Modal -->
-    <div id="privacy-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Treść polityki prywatności...</p>
-      </div>
-    </div>
 
     <script src="script.js"></script>
   </body>
