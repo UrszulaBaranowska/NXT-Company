@@ -8,6 +8,10 @@
 }
 
 /* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--second-black);
@@ -15,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 h1,
