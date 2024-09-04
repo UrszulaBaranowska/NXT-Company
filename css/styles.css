@@ -392,18 +392,32 @@ nav .contact-info a:hover,
 .speditors {
   list-style: none;
 }
+
 footer {
   background-color: var(--first-black);
   color: var(--basic-gold);
-  text-align: center;
   padding: 20px;
 }
 
 .footer-content {
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Rozkłada elementy logo, centrum, prywatność */
+  align-items: center; /* Wyrównuje elementy pionowo */
+  max-width: 1280px; /* Maksymalna szerokość, aby treść była wyśrodkowana */
+  margin: 0 auto; /* Wyśrodkowanie treści stopki */
 }
 
-.footer-content p {
+.logo__footer {
+  margin-left: 15px;
+  height: 125px;
+  width: 275px;
+}
+
+.footer__center {
+  text-align: center; /* Wyśrodkowanie tekstu w centrum */
+}
+
+.footer__center p {
   margin: 10px 0;
 }
 
@@ -418,5 +432,18 @@ footer {
 }
 
 .social-links a:hover {
+  color: var(--white);
+}
+
+.footer__privacy {
+  margin-right: 35px; /* Margines, aby oddalić od krawędzi */
+}
+
+.footer__privacy a {
+  text-decoration: none;
+  color: var(--basic-gold);
+}
+
+.footer__privacy a:hover {
   color: var(--white);
 }
