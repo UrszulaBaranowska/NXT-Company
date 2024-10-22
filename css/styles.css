@@ -5,8 +5,138 @@
   --white-smoke: #f4f4f2ff;
   --first-black: #1c1c1c;
   --second-black: #0a0a0a;
+  --photo-in-back: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("/images/hero_mirror.png");
 }
 
+/* Wersja 2: Granatowo-szary z akcentami złota */
+body.scheme2 {
+  --basic-gold: #b7950b; /* Złoty akcent */
+  --white: #d5d8dc; /* Jasny szary */
+  --little-grey: #2e4053; /* Ciemny granatowy */
+  --white-smoke: #5d6d7e; /* Szary dymny */
+  --first-black: #1b2631; /* Ciemny granat */
+  --second-black: #0e1a25; /* Bardzo ciemny granat */
+}
+
+/* Wersja 3: Ciemnoszary z białym i srebrnym akcentem */
+body.scheme3 {
+  --basic-gold: #aab7b8; /* Srebrny */
+  --white: #f2f3f4; /* Jasny biały */
+  --little-grey: #626567; /* Ciemny szary */
+  --white-smoke: #d7dbdd; /* Biało-szary */
+  --first-black: #2e2e2e; /* Ciemny szary */
+  --second-black: #1a1a1a; /* Bardzo ciemny szary */
+}
+
+/* Wersja 4: Ciemny grafit z białym tekstem i srebrnymi akcentami */
+body.scheme4 {
+  --basic-gold: #5d6d7e; /* Neutralny, stonowany srebrno-szary akcent */
+  --white: #f0f3f4; /* Bardzo jasny, biały tekst */
+  --little-grey: #b2babb; /* Jasnoszary na dodatkowe akcenty */
+  --white-smoke: #e5e8e8; /* Bardzo jasny, neutralny szary */
+  --first-black: #2f3640; /* Ciemny grafit jako tło */
+  --second-black: #1c1e22; /* Bardzo ciemny, niemal czarny grafit */
+}
+
+/* Wersja 5: Głęboki fiolet z jasnym srebrem */
+body.scheme5 {
+  --basic-gold: #ff8000; /* Głęboki fiolet */
+  --white: #e8daef; /* Jasny fioletowy srebrny */
+  --little-grey: #d2b4de; /* Pastelowy fiolet */
+  --white-smoke: #f5eef8; /* Jasny fiolet */
+  --first-black: #1c1c1c; /* Ciemny fioletowy czarny */
+  --second-black: #0f0a0f; /* Bardzo ciemny fiolet */
+}
+
+/* Wersja 6: Elegancka ciemna zieleń z szarymi i złotymi akcentami */
+body.scheme6 {
+  --basic-gold: #b7950b; /* Stonowany złoty, elegancki akcent */
+  --white: #d5d8dc; /* Jasny, delikatny szary dla tekstu */
+  --little-grey: #2e4053; /* Ciemny szaro-zielony odcień */
+  --white-smoke: #566573; /* Przygaszony jasnoszary dla subtelnych elementów */
+  --first-black: #0b3d3a; /* Bardzo ciemna zieleń jako tło */
+  --second-black: #07362f; /* Głębsza ciemna zieleń */
+}
+
+body.scheme7 {
+  --basic-gold: #5dade2; /* Stonowany niebieski akcent */
+  --white: #eaecee; /* Bardzo jasny srebrny tekst */
+  --little-grey: #85929e; /* Chłodny, neutralny szary */
+  --white-smoke: #d5d8dc; /* Bardzo jasny szary */
+  --first-black: #2c3e50; /* Ciemna purpura tło */
+  --second-black: #1c2833; /* Bardzo ciemna purpura */
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/4.png");
+  }
+  .hero h1 {
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0 0 10px 30px;
+  }
+}
+
+body.scheme8 {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/calk-tem-nxt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 100;
+    margin: 0 0 10px 30px;
+  }
+}
+
+body.scheme9 {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/calk-tem-nxt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 100;
+    margin: 0 0 10px 30px;
+  }
+}
+
+body.scheme10 {
+  --basic-gold: #5dade2; /* Stonowany niebieski akcent */
+  --white: #eaecee; /* Bardzo jasny srebrny dla tekstu */
+  --little-grey: #85929e; /* Chłodny, neutralny szary na dodatkowe akcenty */
+  --white-smoke: #d5d8dc; /* Bardzo jasny szary dla subtelnych elementów */
+  --first-black: #2c3e50; /* Ciemna purpura, główne tło */
+  --second-black: #1c2833; /* Bardzo ciemna, niemal czarna purpura */
+}
 /* Global Styles */
 html {
   scroll-behavior: smooth;
@@ -88,6 +218,13 @@ nav .contact-info a:hover,
   color: white;
 }
 
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info__mail {
+  margin-right: 10px;
+}
 .contact__icon {
   fill: var(--basic-gold);
 }
@@ -101,11 +238,7 @@ nav .contact-info a:hover,
 .hero {
   position: relative;
   background-color: var(--background-grey);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("/images/hero_mirror.png");
+  background-image: var(--photo-in-back);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,25 +249,9 @@ nav .contact-info a:hover,
   margin: 0 auto;
 }
 
-/*.hero::before {
-  content: "";
-  position: absolute;
-  top: 25%; 
-  left: 0%;
-  width: 45%;
-  height: 50%; 
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); 
-  z-index: 0;
-}*/
-
 .hero-content {
   position: absolute;
-  top: 35%; /* Dostosuj, aby pasowało do topu prostokąta */
+  top: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,7 +319,6 @@ nav .contact-info a:hover,
 
 .about-image img {
   height: 390px;
-  border-radius: 5px;
 }
 
 .about-text {
@@ -212,7 +328,6 @@ nav .contact-info a:hover,
   padding-left: 10px;
   padding-top: 10px;
   margin-left: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
   z-index: 0;
   border-radius: 5px;
   margin-right: 15px;
@@ -220,11 +335,7 @@ nav .contact-info a:hover,
 
 .features {
   background-color: var(--background-grey);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("/images/hero_mirror.png");
+  background-image: var(--photo-in-back);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -252,7 +363,7 @@ nav .contact-info a:hover,
 
 .feature {
   width: 22%;
-  background-color: rgba(203, 178, 106, 0.9);
+  background-color: rgba(254, 254, 254, 0.579);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -291,12 +402,10 @@ nav .contact-info a:hover,
 .offer-image img {
   max-width: 100%;
   height: 450px;
-  border-radius: 10px;
 }
 
 .offer-text {
   width: 60%;
-  background-color: rgba(255, 255, 255, 0.1);
   z-index: 0;
   border-radius: 10px;
   margin-right: 15px;
@@ -304,89 +413,63 @@ nav .contact-info a:hover,
   padding-top: 25px;
 }
 
-.clients {
-  position: relative;
+.contact {
+  display: flex;
+  padding: 60px 20px;
   background-color: var(--background-grey);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("/images/hero_mirror.png");
+  background-image: var(--photo-in-back);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
   margin: 0 auto;
-  height: 750px;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.clients h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-}
-
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.client {
-  width: 22%;
-  height: 275px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
-.client img {
-  height: 60px;
-  margin-bottom: 20px;
-}
-
-.client p {
-  margin: 10px 0;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
   padding: 60px 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  z-index: 3;
+  position: relative;
 }
 
+.contact-title {
+  margin: 35px 0 15px 0;
+}
+.contact-title2 {
+  margin-bottom: 10px;
+}
 .contact-map iframe {
   border: 0;
-  border-radius: 10px;
-  width: 100%;
-  width: 600px;
-  height: 500px;
+  width: 495px;
+  height: 495px;
 }
 
-.contact-info {
+.contact-info__footer {
+  color: var(--first-black);
   margin-left: 40px;
+  height: 495px;
+  width: 700px;
+  max-width: 1250px;
+  text-align: center;
+  background-color: rgba(254, 254, 254, 0.579);
+  z-index: 0;
+  margin-right: 15px;
 }
 
-.contact-info p,
-.contact-info a {
-  margin: 10px 0;
+.contact-info__footer p,
+.contact-info__footer a {
   color: var(--paynes-gray);
 }
 
-.contact-info a {
+.contact-info__footer a {
   text-decoration: none;
-  color: var(--basic-gold);
+  color: var(--first-black);
 }
 
-.contact-info a:hover {
-  color: var(--first-black);
+.contact__icon-second {
+  fill: var(--first-black);
+}
+
+.contact-info__footer a:hover {
+  color: var(--white-smoke);
 }
 
 .speditors {
@@ -401,10 +484,10 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Rozkłada elementy logo, centrum, prywatność */
-  align-items: center; /* Wyrównuje elementy pionowo */
-  max-width: 1280px; /* Maksymalna szerokość, aby treść była wyśrodkowana */
-  margin: 0 auto; /* Wyśrodkowanie treści stopki */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .logo__footer {
@@ -414,7 +497,7 @@ footer {
 }
 
 .footer__center {
-  text-align: center; /* Wyśrodkowanie tekstu w centrum */
+  text-align: center;
 }
 
 .footer__center p {
@@ -436,7 +519,7 @@ footer {
 }
 
 .footer__privacy {
-  margin-right: 35px; /* Margines, aby oddalić od krawędzi */
+  margin-right: 35px;
 }
 
 .footer__privacy a {

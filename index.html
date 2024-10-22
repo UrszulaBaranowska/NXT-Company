@@ -12,6 +12,20 @@
       rel="stylesheet"
     />
   </head>
+  <!-- Color Scheme Selector -->
+  <div class="color-scheme-selector">
+    <span>Wybierz wersję kolorystyczną: </span>
+    <button onclick="changeColorScheme('scheme1')">Wersja 1</button>
+    <button onclick="changeColorScheme('scheme2')">Wersja 2</button>
+    <button onclick="changeColorScheme('scheme3')">Wersja 3</button>
+    <button onclick="changeColorScheme('scheme4')">Wersja 4</button>
+    <button onclick="changeColorScheme('scheme5')">Wersja 5</button>
+    <button onclick="changeColorScheme('scheme6')">Wersja 6</button>
+    <button onclick="changeColorScheme('scheme7')">Wersja 7</button>
+    <button onclick="changeColorScheme('scheme8')">Wersja 8</button>
+    <button onclick="changeColorScheme('scheme9')">Wersja 9</button>
+    <button onclick="changeColorScheme('scheme10')">Wersja 10</button>
+  </div>
   <body class="container">
     <!-- Header / Navigation -->
     <header id="home">
@@ -27,14 +41,15 @@
           <li><a href="#home">Start</a></li>
           <li><a href="#about">O Nas</a></li>
           <li><a href="#offer">Oferta</a></li>
-          <li><a href="#clients">Referencje</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
         <div class="contact-info">
           <svg class="contact__icon" width="20" height="16">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
-          <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a>
+          <a class="contact-info__mail" href="mailto:kontakt@firma.pl"
+            >biuro@novaxpress.eu</a
+          >
           <svg class="contact__icon" width="20" height="14">
             <use href="./images/icons.svg#icon-smartphone"></use></svg
           ><a href="tel:+48123456789">+48 123 456 789</a>
@@ -64,6 +79,7 @@
       <div class="about-content">
         <div class="about-image">
           <img
+            id="dynamic-image-1"
             src="./images/Nova_Xpress_Transporte_2.png"
             alt="Zdjęcie firmy"
           />
@@ -168,6 +184,7 @@
         </div>
         <div class="offer-image">
           <img
+            id="dynamic-image-2"
             src="./images/Nova_Xpress_Transporte_3.png"
             alt="Zdjęcie firmy"
           />
@@ -180,22 +197,21 @@
       <div class="contact-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.3935521327!2d15.502693676156754!3d51.96324957730088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470613919fc7a947%3A0x3f212940b37406ac!2sTrasa%20P%C3%B3%C5%82nocna%2014%2C%2065-119%20Zielona%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1724760340929!5m2!1spl!2spl"
-          width="600"
-          height="600"
+          width="460"
+          height="460"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="contact-info">
-        <h2>NOVA XPRESS TRANSPORTE SP Z O.O.</h2>
+      <div class="contact-info__footer">
+        <h2 class="contact-title">NOVA XPRESS TRANSPORTE SP Z O.O.</h2>
         <p>
-          ADRES: ul. Trasa Północna 14 (budynek ARPOL, 1 piętro), 65-119 Zielona
-          Góra
+          ul. Trasa Północna 14 (budynek ARPOL, 1 piętro), 65-119 Zielona Góra
         </p>
         <p>NIP: 9731101306</p>
-        <p>Email: <a href="mailto:kontakt@firma.pl">kontakt@firma.pl</a></p>
+        <p>Email: <a href="biuro@novaxpress.eu">biuro@novaxpress.eu</a></p>
         <br />
         <p><b>KONTAKT</b></p>
         <p>Biuro: <a href="tel. +48 123 456 789"> +48 123 456 789</a></p>
@@ -204,27 +220,27 @@
         <p><b>SPEDYTORZY</b></p>
         <ol class="speditors">
           <li>
-            Krzysztof:<svg class="contact__icon" width="20" height="14">
+            Krzysztof:<svg class="contact__icon-second" width="20" height="14">
               <use href="./images/icons.svg#icon-smartphone"></use></svg
             ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
-            <svg class="contact__icon" width="20" height="16">
+            <svg class="contact__icon-second" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use></svg
             ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
           </li>
           <li>
             Łukasz:
-            <svg class="contact__icon" width="20" height="14">
+            <svg class="contact__icon-second" width="20" height="14">
               <use href="./images/icons.svg#icon-smartphone"></use></svg
             ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
-            <svg class="contact__icon" width="20" height="16">
+            <svg class="contact__icon-second" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use></svg
             ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
           </li>
           <li>
-            Paweł :<svg class="contact__icon" width="20" height="14">
+            Paweł :<svg class="contact__icon-second" width="20" height="14">
               <use href="./images/icons.svg#icon-smartphone"></use></svg
             ><a href="tel. +48 123 456 789"> +48 123 456 789</a>
-            <svg class="contact__icon" width="20" height="16">
+            <svg class="contact__icon-second" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use></svg
             ><a href="mailto:kontakt@firma.pl"> mail:kontakt@firma.pl</a>
           </li>
