@@ -82,6 +82,12 @@ body.scheme7 {
 }
 
 body.scheme8 {
+  --basic-gold: #d4af37; /* Ciepły, elegancki złoty akcent */
+  --white: #ffffff; /* Czysta biel dla tekstu */
+  --little-grey: #aab7b8; /* Neutralny jasnoszary dla dodatkowych akcentów */
+  --white-smoke: #f0f3f4; /* Bardzo jasny szary dla subtelnych elementów */
+  --first-black: #1b3a57; /* Głęboki granat jako tło */
+  --second-black: #14233c; /* Bardzo ciemny granat, niemal czarny */
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -106,6 +112,12 @@ body.scheme8 {
 }
 
 body.scheme9 {
+  --basic-gold: #cba135; /* Elegancki, stonowany złoty akcent */
+  --white: #f0f0f0; /* Delikatny biały tekst */
+  --little-grey: #adb5bd; /* Subtelny szary akcent */
+  --white-smoke: #e9ecef; /* Bardzo jasny szary dla subtelnych elementów */
+  --first-black: #1a1e23; /* Bardzo ciemny szary, który zastępuje czerń */
+  --second-black: #223344; /* Głęboki, stonowany granat jako tło */
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
